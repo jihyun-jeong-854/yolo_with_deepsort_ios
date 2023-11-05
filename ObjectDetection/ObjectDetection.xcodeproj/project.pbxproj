@@ -28,11 +28,13 @@
 		269E748D255CC6D100B1D6CA /* test2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 269E748B255CC6D100B1D6CA /* test2.jpg */; };
 		269E7498255CCBA000B1D6CA /* InferenceModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = 269E7496255CCBA000B1D6CA /* InferenceModule.mm */; };
 		269E749B255CCBC300B1D6CA /* UIImage+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269E749A255CCBC300B1D6CA /* UIImage+Helper.swift */; };
-		26A8C11426E17F8100F4A58D /* yolov5s.torchscript.ptl in Resources */ = {isa = PBXBuildFile; fileRef = 26A8C11326E17F8100F4A58D /* yolov5s.torchscript.ptl */; };
 		26FAB5692565E8FC00EA6ED6 /* PrePostProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FAB5682565E8FC00EA6ED6 /* PrePostProcessor.swift */; };
+		43F482D12AF1093400DF9A75 /* exp13_best_v5.torchscript.ptl in Resources */ = {isa = PBXBuildFile; fileRef = 43F482D02AF1093400DF9A75 /* exp13_best_v5.torchscript.ptl */; };
+		674CE70C28B3FD7F4628710F /* Pods_ObjectDetection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82903D73DC1E13083092B8C /* Pods_ObjectDetection.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02C436D418974550F2F6EB72 /* Pods-ObjectDetection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectDetection.debug.xcconfig"; path = "Target Support Files/Pods-ObjectDetection/Pods-ObjectDetection.debug.xcconfig"; sourceTree = "<group>"; };
 		2669BE11270FA61000806A63 /* aicook2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aicook2.jpg; sourceTree = "<group>"; };
 		2669BE13270FA62F00806A63 /* aicook.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aicook.txt; sourceTree = "<group>"; };
 		2669BE14270FA63D00806A63 /* aicook1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aicook1.jpg; sourceTree = "<group>"; };
@@ -58,8 +60,10 @@
 		269E7496255CCBA000B1D6CA /* InferenceModule.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = InferenceModule.mm; sourceTree = "<group>"; };
 		269E7497255CCBA000B1D6CA /* InferenceModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InferenceModule.h; sourceTree = "<group>"; };
 		269E749A255CCBC300B1D6CA /* UIImage+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Helper.swift"; sourceTree = "<group>"; };
-		26A8C11326E17F8100F4A58D /* yolov5s.torchscript.ptl */ = {isa = PBXFileReference; lastKnownFileType = file; path = yolov5s.torchscript.ptl; sourceTree = "<group>"; };
 		26FAB5682565E8FC00EA6ED6 /* PrePostProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrePostProcessor.swift; sourceTree = "<group>"; };
+		43F482D02AF1093400DF9A75 /* exp13_best_v5.torchscript.ptl */ = {isa = PBXFileReference; lastKnownFileType = file; path = exp13_best_v5.torchscript.ptl; sourceTree = "<group>"; };
+		58EF076A151062C25E1CFAC9 /* Pods-ObjectDetection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectDetection.release.xcconfig"; path = "Target Support Files/Pods-ObjectDetection/Pods-ObjectDetection.release.xcconfig"; sourceTree = "<group>"; };
+		C82903D73DC1E13083092B8C /* Pods_ObjectDetection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectDetection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				674CE70C28B3FD7F4628710F /* Pods_ObjectDetection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +95,7 @@
 				269E7470255CC56200B1D6CA /* ObjectDetection */,
 				269E746F255CC56200B1D6CA /* Products */,
 				A3F013A889E9B190698071B6 /* Pods */,
+				3467548EC562370D5E58EBB4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,7 +128,7 @@
 				2669BE11270FA61000806A63 /* aicook2.jpg */,
 				2669BE15270FA65200806A63 /* aicook3.jpg */,
 				266E87222563120D00CF5151 /* classes.txt */,
-				26A8C11326E17F8100F4A58D /* yolov5s.torchscript.ptl */,
+				43F482D02AF1093400DF9A75 /* exp13_best_v5.torchscript.ptl */,
 			);
 			path = ObjectDetection;
 			sourceTree = "<group>";
@@ -147,9 +153,19 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		3467548EC562370D5E58EBB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C82903D73DC1E13083092B8C /* Pods_ObjectDetection.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A3F013A889E9B190698071B6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				02C436D418974550F2F6EB72 /* Pods-ObjectDetection.debug.xcconfig */,
+				58EF076A151062C25E1CFAC9 /* Pods-ObjectDetection.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -161,6 +177,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 269E7482255CC56400B1D6CA /* Build configuration list for PBXNativeTarget "ObjectDetection" */;
 			buildPhases = (
+				1857F1E88F7AAAE38CD17415 /* [CP] Check Pods Manifest.lock */,
 				269E746A255CC56200B1D6CA /* Sources */,
 				269E746B255CC56200B1D6CA /* Frameworks */,
 				269E746C255CC56200B1D6CA /* Resources */,
@@ -214,11 +231,11 @@
 			files = (
 				269E747E255CC56400B1D6CA /* LaunchScreen.storyboard in Resources */,
 				2669BE18270FA65200806A63 /* aicook.txt in Resources */,
-				26A8C11426E17F8100F4A58D /* yolov5s.torchscript.ptl in Resources */,
 				266E87232563120D00CF5151 /* classes.txt in Resources */,
 				269E747B255CC56400B1D6CA /* Assets.xcassets in Resources */,
 				2669BE19270FA65200806A63 /* aicook1.jpg in Resources */,
 				269E748D255CC6D100B1D6CA /* test2.jpg in Resources */,
+				43F482D12AF1093400DF9A75 /* exp13_best_v5.torchscript.ptl in Resources */,
 				2669BE16270FA65200806A63 /* aicook2.jpg in Resources */,
 				269E7488255CC69400B1D6CA /* test1.png in Resources */,
 				269E7479255CC56200B1D6CA /* Main.storyboard in Resources */,
@@ -228,6 +245,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1857F1E88F7AAAE38CD17415 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ObjectDetection-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		269E746A255CC56200B1D6CA /* Sources */ = {
@@ -390,12 +432,14 @@
 		};
 		269E7483255CC56400B1D6CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02C436D418974550F2F6EB72 /* Pods-ObjectDetection.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7J3DTKTQKN;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ObjectDetection/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -403,8 +447,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pytorch.mobile.ObjectDetection;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jihyun.yolov5s;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ObjectDetection/Inference/ObjectDetection-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -414,12 +459,14 @@
 		};
 		269E7484255CC56400B1D6CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58EF076A151062C25E1CFAC9 /* Pods-ObjectDetection.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7J3DTKTQKN;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ObjectDetection/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -427,8 +474,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pytorch.mobile.ObjectDetection;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jihyun.yolov5s;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ObjectDetection/Inference/ObjectDetection-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

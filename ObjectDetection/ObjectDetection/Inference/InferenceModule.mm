@@ -10,7 +10,7 @@
 // 640x640 is the default image size used in the export.py in the yolov5 repo to export the TorchScript model, 25200*85 is the model output size
 const int input_width = 640;
 const int input_height = 640;
-const int output_size = 25200*85;
+const int output_size = 25200*34;
 
 
 @implementation InferenceModule {
